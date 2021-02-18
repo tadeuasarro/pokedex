@@ -10,18 +10,18 @@ function indexPokemon() {
   return dispatch => {
     dispatch(getPokemonPending());
     fetch(url, config)
-    .then(res => res.json())
-    .then(res => {
-      if(res.error) {
-        throw(res.error);
-      }
-      dispatch(getPokemon(res.books));
-      return res.books;
-    })
-    .catch(error => {
-      dispatch(getPokemonError(error));
-    })
-  }
+      .then(res => res.json())
+      .then(res => {
+        if (res.error) {
+          throw (res.error);
+        }
+        dispatch(getPokemon(res.books));
+        return res.books;
+      })
+      .catch(error => {
+        dispatch(getPokemonError(error));
+      });
+  };
 }
 
 export default indexPokemon;

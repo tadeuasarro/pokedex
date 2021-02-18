@@ -10,3 +10,7 @@ const pokemonReducer = (state = pokemonInitial, action) => {
 };
 
 export default pokemonReducer;
+
+export const getPokemon = state => state.products;
+export const getPokemonPending = state => state.pending;
+export const getPokemonError = state => state.error;
