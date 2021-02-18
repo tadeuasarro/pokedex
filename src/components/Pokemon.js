@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
+import './pokemon.css';
 
 const Pokemon = ({ pokemon }) => {
   const { name, url } = (pokemon);
+  const id = (url.slice(34)).slice(0, 1);
   return (
-    <div>
-      { `${name}, ${url}` }
+    <div className="pokemon-container">
+      <span>{id}</span>
+      <span>{name}</span>
     </div>
   );
 };

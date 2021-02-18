@@ -1,0 +1,6 @@
+.pokemon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: green solid 1px;
+}

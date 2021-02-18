@@ -1,0 +1,8 @@
+.pokemon-list-container {
+  border: black solid 1px;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
