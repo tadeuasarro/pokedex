@@ -5,6 +5,6 @@ const App = () => (
   <div>
     something amazing
   </div>
-)
+);
 
 export default App;

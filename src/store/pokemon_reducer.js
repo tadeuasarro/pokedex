@@ -1,16 +1,17 @@
 const pokemonInitial = {
-  pokemon: [
+  results: [
     {
-      id: 1,
-      name: 'Bulbasaur',
-      type: 'leaf',
-    }
-  ]
-}
+      name: 'bulbasaur',
+      url: 'https://pokeapi.co/api/v2/pokemon/1/',
+    },
+  ],
+};
 
-export const pokemonReducer = (state = pokemonInitial, action) => {
+const pokemonReducer = (state = pokemonInitial, action) => {
   switch (action.type) {
     default:
       return state;
   }
-}
+};
+
+export default pokemonReducer;
