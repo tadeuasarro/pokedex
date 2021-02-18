@@ -1,10 +1,9 @@
 import React from 'react';
+import KantoList from './KantoList';
 import './App.css';
 
 const App = () => (
-  <div>
-    something amazing
-  </div>
+  <KantoList />
 );
 
 export default App;
