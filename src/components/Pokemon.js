@@ -3,10 +3,20 @@ import './pokemon.css';
 
 const Pokemon = ({ pokemon }) => {
   const { name, url } = (pokemon);
-  const id = (url.slice(34)).slice(0, 1);
+  let id = (url.slice(34)).replace('/', '');
+
+  if (id.length === 1) {
+    id = `00${id}`;
+  } else if (id.length === 2) {
+    id = `0${id}`;
+  }
+
   return (
     <div className="pokemon-container">
-      <span>{id}</span>
+      <span>
+        #
+        {id}
+      </span>
       <span>{name}</span>
     </div>
   );

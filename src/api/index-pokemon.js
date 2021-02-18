@@ -15,7 +15,7 @@ function indexPokemon() {
         if (res.error) {
           throw (res.error);
         }
-        dispatch(fetchPokemonSuccess(res.books));
+        dispatch(fetchPokemonSuccess(res.results));
         return res.books;
       })
       .catch(error => {

@@ -1,8 +1,12 @@
+.pokemon-list-outer-container {
+  padding: 20px 10%;
+}
+
 .pokemon-list-container {
-  border: black solid 1px;
-  padding: 0 10%;
   display: grid;
   grid-template-columns: auto auto auto;
+  border-left: green solid 1px;
+  border-top: green solid 1px;
 }
 
 

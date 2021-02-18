@@ -1,9 +1,13 @@
 import React from 'react';
 import KantoList from '../containers/KantoList';
-import './App.css';
+import Navbar from './Navbar';
+import './app.css';
 
 const App = () => (
-  <KantoList />
+  <div>
+    <Navbar />
+    <KantoList />
+  </div>
 );
 
 export default App;

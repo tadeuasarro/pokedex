@@ -11,12 +11,14 @@ const KantoList = () => {
   useEffect(() => dispatch(indexPokemon()), []);
 
   return (
-    <div className="pokemon-list-container">
-      {
-        counter.map(pokemon => (
-          <Pokemon className="pokemon-container" key={pokemon.name} pokemon={pokemon} />
-        ))
-      }
+    <div className="pokemon-list-outer-container">
+      <div className="pokemon-list-container">
+        {
+          counter.map(pokemon => (
+            <Pokemon className="pokemon-container" key={pokemon.name} pokemon={pokemon} />
+          ))
+        }
+      </div>
     </div>
   );
 };
