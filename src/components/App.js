@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const app = () => (
+const App = () => (
   <div>
     something amazing
   </div>
