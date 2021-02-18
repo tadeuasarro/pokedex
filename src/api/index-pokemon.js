@@ -1,4 +1,4 @@
-import { getPokemon, getPokemonPending, getPokemonError } from '../store/pokemon_reducer';
+import { fetchPokemonPending, fetchPokemonError, fetchPokemonSuccess } from '../actions/index';
 
 const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 const config = {
@@ -8,18 +8,18 @@ const config = {
 
 function indexPokemon() {
   return dispatch => {
-    dispatch(getPokemonPending());
+    dispatch(fetchPokemonPending());
     fetch(url, config)
       .then(res => res.json())
       .then(res => {
         if (res.error) {
           throw (res.error);
         }
-        dispatch(getPokemon(res.books));
+        dispatch(fetchPokemonSuccess(res.books));
         return res.books;
       })
       .catch(error => {
-        dispatch(getPokemonError(error));
+        dispatch(fetchPokemonError(error));
       });
   };
 }
