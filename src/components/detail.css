@@ -1,0 +1,15 @@
+.pokemon-detail-outer-container {
+  padding: 20px 10%;
+}
+
+.pokemon-detail-container {
+  border: #A4C01D solid 3px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-info {
+  margin-bottom: 20px;
+}

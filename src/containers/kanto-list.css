@@ -5,8 +5,8 @@
 .pokemon-list-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  border-left: green solid 1px;
-  border-top: green solid 1px;
+  border-left: #A4C01D solid 1px;
+  border-top: #A4C01D solid 1px;
 }
 
 

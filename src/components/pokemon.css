@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  border-right: green solid 1px;
-  border-bottom: green solid 1px;
+  border-right: #A4C01D solid 1px;
+  border-bottom: #A4C01D solid 1px;
   transition: 0.3s;
 }
 
 .pokemon-container:hover{
   cursor: pointer;
   transform: scale(1.1);
-  background: green;
+  background: #A4C01D;
   color: white;
   transition: 0.3s;
 }
