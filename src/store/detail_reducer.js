@@ -2,7 +2,7 @@ import { FETCH_DETAIL_ERROR, FETCH_DETAIL_PENDING, FETCH_DETAIL_SUCCESS } from '
 
 const detailInitial = {
   pending: false,
-  results: [],
+  results: false,
   error: null,
 };
 

@@ -1,6 +1,6 @@
 import { fetchDetailPending, fetchDetailError, fetchDetailSuccess } from '../actions/index';
 
-const url = 'https://pokeapi.co/api/v2/pokemon/9';
+const url = 'https://pokeapi.co/api/v2/pokemon/1';
 const config = {
   mode: 'cors',
   method: 'GET',
@@ -16,13 +16,14 @@ function showPokemon() {
           throw (res.error);
         }
         const {
-          weight, height, name, sprites, types,
+          weight, height, name, types, id,
         } = res;
+        const sprite = (res.sprites.front_default);
         dispatch(fetchDetailSuccess({
-          weight, height, name, sprites, types,
+          weight, height, name, types, id, sprite,
         }));
         return {
-          weight, height, name, sprites, types,
+          weight, height, name, types, id, sprite,
         };
       })
       .catch(error => {

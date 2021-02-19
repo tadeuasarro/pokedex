@@ -8,7 +8,6 @@ import './kanto-list.css';
 
 const KantoList = () => {
   const { pokemon, detail } = useSelector(state => state);
-  console.log({ pokemon, detail });
 
   const dispatch = useDispatch();
 
@@ -20,7 +19,7 @@ const KantoList = () => {
 
   if (pokemon.pending) return <div>Please wait!</div>;
 
-  if (detail.results) return <Detail />;
+  if (detail.results) return <Detail detail={detail.results} />;
 
   return (
     <div className="pokemon-list-outer-container">
