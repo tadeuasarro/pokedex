@@ -1,5 +1,10 @@
 import { FETCH_POKEMON_PENDING, FETCH_POKEMON_SUCCESS, FETCH_POKEMON_ERROR } from '../actions/index';
-import pokemonInitial from './initial';
+
+const pokemonInitial = {
+  pending: false,
+  results: [],
+  error: null,
+};
 
 export const pokemonReducer = (state = pokemonInitial, action) => {
   switch (action.type) {

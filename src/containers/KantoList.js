@@ -3,24 +3,30 @@ import { useEffect } from 'react';
 import Pokemon from '../components/Pokemon';
 import Detail from '../components/Detail';
 import indexPokemon from '../api/index-pokemon';
+import showPokemon from '../api/show-pokemon';
 import './kanto-list.css';
 
 const KantoList = () => {
-  const { pending, results, detail } = useSelector(state => state).pokemon;
-  console.log(useSelector(state => state).pokemon);
+  const { pokemon, detail } = useSelector(state => state);
+  console.log({ pokemon, detail });
+
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(indexPokemon()), []);
+  if (!pokemon.results.length !== 0) {
+    useEffect(() => dispatch(indexPokemon()), []);
+  }
 
-  if (pending) return <div>Please wait!</div>;
+  useEffect(() => dispatch(showPokemon()), []);
 
-  if (!detail) return <Detail />;
+  if (pokemon.pending) return <div>Please wait!</div>;
+
+  if (detail.results) return <Detail />;
 
   return (
     <div className="pokemon-list-outer-container">
       <div className="pokemon-list-container">
         {
-          results.map(pokemon => (
+          pokemon.results.map(pokemon => (
             <Pokemon className="pokemon-container" key={pokemon.name} pokemon={pokemon} />
           ))
         }
