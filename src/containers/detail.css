@@ -7,7 +7,7 @@
   border-radius: 5px;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .detail-info {
@@ -29,17 +29,37 @@
   background-size: cover;
 }
 
-.reset-button {
+.reset-button,
+.next-button,
+.previous-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
   border: none;
   padding: 7.5px;
-  background-color: orange;
   border-radius: 5px;
   outline: none;
+  width: 100px;
 }
 
-.reset-button:hover {
+.reset-button {
+  top: 10px;
+  right: 10px;
+  background-color: orange;
+}
+
+.next-button {
+  bottom: 10px;
+  right: 10px;
+  background-color: lightgray;
+}
+
+.previous-button {
+  bottom: 10px;
+  left: 10px;
+  background-color: lightgray;
+}
+
+.reset-button:hover,
+.previous-button:hover,
+.next-button:hover {
   cursor: pointer;
 }

@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { resetDetail } from '../actions/index';
+import showPokemon from '../api/show-pokemon';
 import './detail.css';
 
 const Detail = (detail) => {
@@ -12,10 +13,20 @@ const Detail = (detail) => {
     dispatch(resetDetail());
   }
 
+  const handleNext = () => {
+    dispatch(showPokemon(id + 1))
+  }
+
+  const handlePrevious = () => {
+    dispatch(showPokemon(id - 1))
+  }
+
   return (
     <div className="pokemon-detail-outer-container">
       <div className="pokemon-detail-container">
         <button type="button" onClick={handleReset} className="reset-button">Home</button>
+        <button type="button" onClick={handleNext} className="next-button">Previous</button>
+        <button type="button" onClick={handlePrevious} className="previous-button">Next</button>
         <div className="pokemon-detail-info">
           <p className="detail-info">#{id} {name.toUpperCase()}</p>
           <p className="detail-info">
