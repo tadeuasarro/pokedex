@@ -10,6 +10,20 @@
   justify-content: space-around;
 }
 
+.pokemon-detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .detail-info {
   margin-bottom: 20px;
+}
+
+.pokemon-sprite {
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

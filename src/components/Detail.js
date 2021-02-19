@@ -18,7 +18,7 @@ const Detail = (detail) => {
           <p>Weight {weight} lbs</p>
         </div>
         <div>
-          <img src={sprite} alt={sprite} />
+          <div className="pokemon-sprite" style={{backgroundImage: `url(${sprite})`}}></div>
         </div>
       </div>
     </div>

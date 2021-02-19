@@ -1,6 +1,6 @@
 import { fetchDetailPending, fetchDetailError, fetchDetailSuccess } from '../actions/index';
 
-const url = 'https://pokeapi.co/api/v2/pokemon/1';
+const url = 'https://pokeapi.co/api/v2/pokemon/3';
 const config = {
   mode: 'cors',
   method: 'GET',
