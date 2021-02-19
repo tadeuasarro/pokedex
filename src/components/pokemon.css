@@ -1,10 +1,14 @@
 .pokemon-container {
   display: flex;
+  background-color: #fff;
   justify-content: space-between;
   padding: 20px;
   border-right: #A4C01D solid 1px;
   border-bottom: #A4C01D solid 1px;
+  border-top: none;
+  border-left: none;
   transition: 0.3s;
+  outline: none;
 }
 
 .pokemon-container:hover{

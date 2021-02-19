@@ -23,6 +23,7 @@ export const fetchPokemonError = error => ({
 export const FETCH_DETAIL_PENDING = 'FETCH_DETAIL_PENDING';
 export const FETCH_DETAIL_SUCCESS = 'FETCH_DETAIL_SUCCESS';
 export const FETCH_DETAIL_ERROR = 'FETCH_DETAIL_ERROR';
+export const RESET_DETAIL = 'RESET_DETAIL';
 
 export const fetchDetailPending = () => ({
   type: FETCH_DETAIL_PENDING,
@@ -36,4 +37,8 @@ export const fetchDetailSuccess = detail => ({
 export const fetchDetailError = error => ({
   type: FETCH_DETAIL_ERROR,
   error,
+});
+
+export const resetDetail = () => ({
+  type: RESET_DETAIL,
 });

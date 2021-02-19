@@ -1,15 +1,15 @@
 import { fetchDetailPending, fetchDetailError, fetchDetailSuccess } from '../actions/index';
 
-const url = 'https://pokeapi.co/api/v2/pokemon/3';
+const url = 'https://pokeapi.co/api/v2/pokemon/';
 const config = {
   mode: 'cors',
   method: 'GET',
 };
 
-function showPokemon() {
+function showPokemon(id) {
   return dispatch => {
     dispatch(fetchDetailPending());
-    fetch(url, config)
+    fetch(`${url}${id}`, config)
       .then(res => res.json())
       .then(res => {
         if (res.error) {

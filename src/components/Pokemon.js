@@ -1,24 +1,28 @@
+/* eslint-disable */
 import PropTypes from 'prop-types';
 import './pokemon.css';
 
-const Pokemon = ({ pokemon }) => {
+const Pokemon = ({ pokemon, onClick }) => {
   const { name, url } = (pokemon);
-  let id = (url.slice(34)).replace('/', '');
+  const id = (url.slice(34)).replace('/', '');
+  let idStr = ''
 
   if (id.length === 1) {
-    id = `00${id}`;
+    idStr = `00${id}`;
   } else if (id.length === 2) {
-    id = `0${id}`;
+    idStr = `0${id}`;
+  } else {
+    idStr = id;
   }
 
   return (
-    <div className="pokemon-container">
+    <button type="button" onClick={() => onClick(id)} className="pokemon-container">
       <span>
         #
-        {id}
+        {idStr}
       </span>
       <span>{name}</span>
-    </div>
+    </button>
   );
 };
 
@@ -27,6 +31,7 @@ Pokemon.propTypes = {
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
   }),
+  onClick: PropTypes.func.isRequired,
 };
 
 Pokemon.defaultProps = {

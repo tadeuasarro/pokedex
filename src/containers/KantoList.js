@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Pokemon from '../components/Pokemon';
-import Detail from '../components/Detail';
+import Detail from './Detail';
 import indexPokemon from '../api/index-pokemon';
 import showPokemon from '../api/show-pokemon';
 import './kanto-list.css';
@@ -15,7 +15,9 @@ const KantoList = () => {
     useEffect(() => dispatch(indexPokemon()), []);
   }
 
-  useEffect(() => dispatch(showPokemon()), []);
+  const handleClick = id => {
+    dispatch(showPokemon(id));
+  };
 
   if (pokemon.pending) return <div>Please wait!</div>;
 
@@ -26,7 +28,7 @@ const KantoList = () => {
       <div className="pokemon-list-container">
         {
           pokemon.results.map(pokemon => (
-            <Pokemon className="pokemon-container" key={pokemon.name} pokemon={pokemon} />
+            <Pokemon className="pokemon-container" onClick={handleClick} key={pokemon.name} pokemon={pokemon} />
           ))
         }
       </div>
