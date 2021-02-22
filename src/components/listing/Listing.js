@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Pokemon from './Pokemon';
+import Pokemon from '../pokemon/Pokemon';
 
 const Listing = ({ pokemonList, onClick, filter }) => {
   if (filter) {

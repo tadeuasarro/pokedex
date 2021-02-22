@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import Detail from './Detail';
-import Listing from '../components/Listing';
-import indexPokemon from '../api/index-pokemon';
-import showPokemon from '../api/show-pokemon';
+import Detail from '../detail/Detail';
+import Listing from '../../components/listing/Listing';
+import indexPokemon from '../../api/index-pokemon';
+import showPokemon from '../../api/show-pokemon';
 import './kanto-list.css';
 
 const KantoList = () => {

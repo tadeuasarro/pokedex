@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { resetDetail } from '../actions/index';
-import showPokemon from '../api/show-pokemon';
+import { resetDetail } from '../../actions/index';
+import showPokemon from '../../api/show-pokemon';
 import './detail.css';
 
 const Detail = detail => {

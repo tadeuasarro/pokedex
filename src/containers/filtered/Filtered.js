@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { resetTypes } from '../actions/index';
-import indexTypes from '../api/index-types';
+import { resetTypes } from '../../actions/index';
+import indexTypes from '../../api/index-types';
 import './filtered.css';
 
 const Filtered = () => {
