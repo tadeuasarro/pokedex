@@ -1,5 +1,13 @@
-/* eslint-disable */
+import { useDispatch } from 'react-redux';
+import indexTypes from '../api/index-types';
+
 const Filtered = () => {
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(indexTypes());
+  };
+
   return (
     <div>
       <form>
@@ -21,10 +29,10 @@ const Filtered = () => {
           <option value="rock">Rock</option>
           <option value="water">Water</option>
         </select>
-        <button type="button">Filter</button>
+        <button onClick={() => handleClick()} type="button">Filter</button>
       </form>
     </div>
   );
-}
+};
 
 export default Filtered;

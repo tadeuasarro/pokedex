@@ -16,9 +16,8 @@ function indexTypes() {
           throw (res.error);
         }
         const result = res.pokemon.filter(pokemon => (pokemon.pokemon.url.slice(34).replace('/', '') <= 151));
-        console.log(result);
         dispatch(fetchTypesSuccess(result));
-        return res;
+        return result;
       })
       .catch(error => {
         console.log(error);
