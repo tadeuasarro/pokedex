@@ -7,7 +7,7 @@ import showPokemon from '../api/show-pokemon';
 import './kanto-list.css';
 
 const KantoList = () => {
-  const { pokemon, detail } = useSelector(state => state);
+  const { pokemon, detail, filter } = useSelector(state => state);
 
   const dispatch = useDispatch();
 
@@ -22,6 +22,8 @@ const KantoList = () => {
   if (pokemon.pending) return <div>Loading...</div>;
 
   if (detail.results) return <Detail detail={detail.results} />;
+
+  if (filter.results) return <Listing pokemonList={filter.results} onClick={handleClick} filter />;
 
   return <Listing pokemonList={pokemon.results} onClick={handleClick} />;
 };

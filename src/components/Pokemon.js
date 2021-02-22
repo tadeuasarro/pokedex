@@ -1,11 +1,10 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 import './pokemon.css';
 
 const Pokemon = ({ pokemon, onClick }) => {
   const { name, url } = (pokemon);
   const id = (url.slice(34)).replace('/', '');
-  let idStr = ''
+  let idStr = '';
 
   if (id.length === 1) {
     idStr = `00${id}`;
