@@ -5,14 +5,17 @@ const Filtered = () => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(indexTypes());
+    const key = document.getElementById('types-listing').value;
+    if (key !== 'all') {
+      dispatch(indexTypes(key));
+    }
   };
 
   return (
     <div>
       <form>
-        <select>
-          <option>All pokemon</option>
+        <select id="types-listing">
+          <option value="all">All pokemon</option>
           <option value="bug">Bug</option>
           <option value="dragon">Dragon</option>
           <option value="electric">Electric</option>

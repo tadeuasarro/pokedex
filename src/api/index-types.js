@@ -1,15 +1,15 @@
 import { fetchTypesPending, fetchTypesSuccess, fetchTypesError } from '../actions/index';
 
-const url = 'https://pokeapi.co/api/v2/type/fire/';
+const url = 'https://pokeapi.co/api/v2/type/';
 const config = {
   mode: 'cors',
   method: 'GET',
 };
 
-function indexTypes() {
+function indexTypes(key) {
   return dispatch => {
     dispatch(fetchTypesPending());
-    fetch(url, config)
+    fetch(`${url}${key}`, config)
       .then(res => res.json())
       .then(res => {
         if (res.error) {
