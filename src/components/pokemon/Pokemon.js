@@ -29,12 +29,8 @@ Pokemon.propTypes = {
   pokemon: PropTypes.shape({
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
   onClick: PropTypes.func.isRequired,
-};
-
-Pokemon.defaultProps = {
-  pokemon: {},
 };
 
 export default Pokemon;

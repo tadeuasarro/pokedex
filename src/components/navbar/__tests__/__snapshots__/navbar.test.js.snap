@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display renders correctly 1`] = `
+<div
+  id="navbar"
+>
+  <img
+    alt="Pokémon"
+    className="pokemon-logo"
+    src="./logo.png"
+  />
+</div>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display renders correctly 1`] = `
+<button
+  className="pokemon-container"
+  onClick={[Function]}
+  type="button"
+>
+  <span>
+    #
+    002
+  </span>
+  <span>
+    ivysaur
+  </span>
+</button>
+`;
