@@ -42,3 +42,23 @@ export const fetchDetailError = error => ({
 export const resetDetail = () => ({
   type: RESET_DETAIL,
 });
+
+// FETCH FILTERED POKEMON BY TYPE
+
+export const FETCH_TYPES_PENDING = 'FETCH_TYPES_PENDING';
+export const FETCH_TYPES_SUCCESS = 'FETCH_TYPES_SUCCESS';
+export const FETCH_TYPES_ERROR = 'FETCH_TYPES_ERROR';
+
+export const fetchTypesPending = () => ({
+  type: FETCH_TYPES_PENDING,
+});
+
+export const fetchTypesSuccess = types => ({
+  type: FETCH_TYPES_SUCCESS,
+  types,
+});
+
+export const fetchTypesError = error => ({
+  type: FETCH_TYPES_ERROR,
+  error,
+});

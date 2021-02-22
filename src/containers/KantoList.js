@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Pokemon from '../components/Pokemon';
 import Detail from './Detail';
 import indexPokemon from '../api/index-pokemon';
+import indexTypes from '../api/index-types';
 import showPokemon from '../api/show-pokemon';
 import './kanto-list.css';
 
@@ -17,9 +18,10 @@ const KantoList = () => {
 
   const handleClick = id => {
     dispatch(showPokemon(id));
+    dispatch(indexTypes());
   };
 
-  if (pokemon.pending) return <div>Please wait!</div>;
+  if (pokemon.pending) return <div>Loading...</div>;
 
   if (detail.results) return <Detail detail={detail.results} />;
 
