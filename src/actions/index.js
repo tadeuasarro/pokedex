@@ -48,6 +48,7 @@ export const resetDetail = () => ({
 export const FETCH_TYPES_PENDING = 'FETCH_TYPES_PENDING';
 export const FETCH_TYPES_SUCCESS = 'FETCH_TYPES_SUCCESS';
 export const FETCH_TYPES_ERROR = 'FETCH_TYPES_ERROR';
+export const RESET_TYPES = 'RESET_TYPES';
 
 export const fetchTypesPending = () => ({
   type: FETCH_TYPES_PENDING,
@@ -61,4 +62,8 @@ export const fetchTypesSuccess = types => ({
 export const fetchTypesError = error => ({
   type: FETCH_TYPES_ERROR,
   error,
+});
+
+export const resetTypes = () => ({
+  type: RESET_TYPES,
 });

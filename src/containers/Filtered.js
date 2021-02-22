@@ -1,5 +1,7 @@
 import { useDispatch } from 'react-redux';
+import { resetTypes } from '../actions/index';
 import indexTypes from '../api/index-types';
+import './filtered.css';
 
 const Filtered = () => {
   const dispatch = useDispatch();
@@ -8,11 +10,13 @@ const Filtered = () => {
     const key = document.getElementById('types-listing').value;
     if (key !== 'all') {
       dispatch(indexTypes(key));
+    } else {
+      dispatch(resetTypes());
     }
   };
 
   return (
-    <div>
+    <div className="filter-container">
       <form>
         <select id="types-listing">
           <option value="all">All pokemon</option>
@@ -32,7 +36,7 @@ const Filtered = () => {
           <option value="rock">Rock</option>
           <option value="water">Water</option>
         </select>
-        <button onClick={() => handleClick()} type="button">Filter</button>
+        <button className="filter-button" onClick={() => handleClick()} type="button">Filter</button>
       </form>
     </div>
   );

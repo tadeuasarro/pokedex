@@ -20,7 +20,6 @@ function indexTypes(key) {
         return result;
       })
       .catch(error => {
-        console.log(error);
         dispatch(fetchTypesError(error));
       });
   };
