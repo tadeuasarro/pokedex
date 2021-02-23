@@ -53,7 +53,7 @@ Start server with:
     npm start
 ```
 
-Open `http://localhost:9000/` in your favorite browser.
+Open `http://localhost:3000/` in your favorite browser.
 
 ### Run tests
 
