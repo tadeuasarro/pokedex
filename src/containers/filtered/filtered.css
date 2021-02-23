@@ -22,12 +22,12 @@
   border-radius: 0 5px 5px 0;
 }
 
-.filter-button:hover {
-  cursor: pointer;
-}
-
 #types-listing,
 .filter-button {
   padding: 10px;
   outline: none;
+}
+
+.filter-button:hover {
+  cursor: pointer;
 }

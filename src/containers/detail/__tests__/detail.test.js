@@ -28,6 +28,7 @@ describe('Rendering component', () => {
         </Provider>,
       );
     });
+    // eslint-disable-next-line
     const element = screen.getByText('Home');
   });
 });

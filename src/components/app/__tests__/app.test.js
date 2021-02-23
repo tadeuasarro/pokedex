@@ -9,6 +9,7 @@ describe('Rendering component', () => {
     act(() => {
       render(<Provider store={store}><App /></Provider>);
     });
+    // eslint-disable-next-line
     const element = screen.getByText('Filter');
   });
 });

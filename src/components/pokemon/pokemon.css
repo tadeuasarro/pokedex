@@ -3,16 +3,16 @@
   background-color: #fff;
   justify-content: space-between;
   padding: 20px;
-  border-right: #A4C01D solid 1px;
-  border-bottom: #A4C01D solid 1px;
+  border-right: #a4c01d solid 1px;
+  border-bottom: #a4c01d solid 1px;
   border-top: none;
   border-left: none;
   outline: none;
 }
 
-.pokemon-container:hover{
+.pokemon-container:hover {
   cursor: pointer;
-  background: #A4C01D;
+  background: #a4c01d;
   color: white;
   transition: 0.3s;
 }
