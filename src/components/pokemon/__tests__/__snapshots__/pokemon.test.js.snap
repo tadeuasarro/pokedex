@@ -11,7 +11,7 @@ exports[`Display renders correctly 1`] = `
     002
   </span>
   <span>
-    ivysaur
+    Ivysaur
   </span>
 </button>
 `;

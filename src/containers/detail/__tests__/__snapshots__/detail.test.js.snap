@@ -35,7 +35,8 @@ exports[`Display renders correctly 1`] = `
         className="detail-info"
       >
         #
-        1
+        001
+         
         STRING
       </p>
       <p
@@ -43,19 +44,20 @@ exports[`Display renders correctly 1`] = `
       >
         <span>
           GRASS
+           
         </span>
       </p>
       <p
         className="detail-info"
       >
-        Height
+        Height  
         1
-        m
+          m
       </p>
       <p>
-        Weight
+        Weight  
         10
-        kg
+          kg
       </p>
     </div>
     <div>

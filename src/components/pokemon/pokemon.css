@@ -7,13 +7,11 @@
   border-bottom: #A4C01D solid 1px;
   border-top: none;
   border-left: none;
-  transition: 0.3s;
   outline: none;
 }
 
 .pokemon-container:hover{
   cursor: pointer;
-  transform: scale(1.1);
   background: #A4C01D;
   color: white;
   transition: 0.3s;

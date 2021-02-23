@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Display renders correctly 1`] = `
-<div>
-  Loading...
+<div
+  className="loading-container"
+>
+  <h1
+    className="loading-message"
+  >
+    Loading...
+  </h1>
 </div>
 `;

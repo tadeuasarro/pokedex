@@ -108,8 +108,14 @@ exports[`Display renders correctly 1`] = `
       </button>
     </form>
   </div>
-  <div>
-    Loading...
+  <div
+    className="loading-container"
+  >
+    <h1
+      className="loading-message"
+    >
+      Loading...
+    </h1>
   </div>
 </div>
 `;

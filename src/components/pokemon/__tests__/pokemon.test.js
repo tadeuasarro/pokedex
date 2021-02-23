@@ -6,7 +6,7 @@ import Pokemon from '../Pokemon';
 
 const handleClick = () => true;
 
-const pokemon = { name: 'ivysaur', url: 'https://pokeapi.co/api/v2/pokemon/2/' };
+const pokemon = { name: 'Ivysaur', url: 'https://pokeapi.co/api/v2/pokemon/2/' };
 
 describe('Rendering component', () => {
   it('creates an App component', () => {
@@ -17,7 +17,7 @@ describe('Rendering component', () => {
         </Provider>,
       );
     });
-    const element = screen.getByText('ivysaur');
+    const element = screen.getByText('Ivysaur');
   });
 });
 

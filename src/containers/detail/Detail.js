@@ -5,21 +5,36 @@ import showPokemon from '../../api/show-pokemon';
 import './detail.css';
 
 const Detail = detail => {
+  const dispatch = useDispatch();
+
   const {
     weight, height, id, types, sprite, name,
   } = detail.detail;
-  const dispatch = useDispatch();
+
+  let idStr = String(id);
+
+  if (idStr.length === 1) {
+    idStr = `00${id}`;
+  } else if (idStr.length === 2) {
+    idStr = `0${id}`;
+  } else {
+    idStr = id;
+  }
 
   const handleReset = () => {
     dispatch(resetDetail());
   };
 
   const handleNext = () => {
-    dispatch(showPokemon(id + 1));
+    if (id < 151) {
+      dispatch(showPokemon(id + 1));
+    }
   };
 
   const handlePrevious = () => {
-    dispatch(showPokemon(id - 1));
+    if (id > 1) {
+      dispatch(showPokemon(id - 1));
+    }
   };
 
   return (
@@ -31,7 +46,8 @@ const Detail = detail => {
         <div className="pokemon-detail-info">
           <p className="detail-info">
             #
-            {id}
+            {idStr}
+            &ensp;
             {name.toUpperCase()}
           </p>
           <p className="detail-info">
@@ -39,18 +55,23 @@ const Detail = detail => {
               types.map(type => (
                 <span key={type.type.name}>
                   {type.type.name.toUpperCase()}
+                  &ensp;
                 </span>
               ))
             }
           </p>
           <p className="detail-info">
             Height
+            &ensp;
             {height / 10}
+            &ensp;
             m
           </p>
           <p>
             Weight
+            &ensp;
             {weight / 10}
+            &ensp;
             kg
           </p>
         </div>

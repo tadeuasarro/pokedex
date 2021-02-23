@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import './pokemon.css';
 
+const capitalize = myStr => (myStr.charAt(0).toUpperCase() + myStr.slice(1));
+
 const Pokemon = ({ pokemon, onClick }) => {
   const { name, url } = (pokemon);
   const id = (url.slice(34)).replace('/', '');
@@ -20,7 +22,7 @@ const Pokemon = ({ pokemon, onClick }) => {
         #
         {idStr}
       </span>
-      <span>{name}</span>
+      <span>{capitalize(name)}</span>
     </button>
   );
 };
