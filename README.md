@@ -13,7 +13,7 @@
 
 #### Livedemo
 
-- [Github](https://relaxed-leakey-500f5c.netlify.app/)
+- [Heroku](https://calm-ravine-21015.herokuapp.com/)
 
 ## Built With
 
@@ -22,12 +22,12 @@
 
 ## Packages
 - [Babel](https://babeljs.io/)
-- [Core JS](https://www.npmjs.com/package/core-js)
-- [CSS Loader](https://webpack.js.org/loaders/css-loader/)
+- [Enzyme](https://www.npmjs.com/package/enzyme)
 - [Eslint](https://eslint.org/)
-- [File Loader](https://webpack.js.org/loaders/file-loader/)
-- [Phaser](https://phaser.io/)
-- [Style Loader](https://webpack.js.org/loaders/style-loader/)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
+- [React-dom](https://www.npmjs.com/package/react-dom)
+- [React-test-renderer](https://www.npmjs.com/package/react-test-renderer)
+- [Redux-thunk](https://www.npmjs.com/package/redux-thunk)
 - [Stylelint](https://stylelint.io/)
 - [Webpack](https://webpack.js.org/)
 
@@ -50,7 +50,7 @@ Install packages with
 Start server with:
 
 ```
-    npm start
+  npm start
 ```
 
 Open `http://localhost:3000/` in your favorite browser.
@@ -58,7 +58,7 @@ Open `http://localhost:3000/` in your favorite browser.
 ### Run tests
 
 ```
-    npm test
+  npm test
 ```
 
 ### Authors
@@ -81,7 +81,7 @@ Give a star if you like this project!
 
 ### Acknowledgments
 
-- [Game Dev Academy](https://gamedevacademy.org/)
+- [PokéAPI](https://pokeapi.co/)
 - [Microverse](https://www.microverse.org/)
 
 ### 📝 License
