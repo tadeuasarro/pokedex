@@ -8,3 +8,15 @@
   border-left: #a4c01d solid 1px;
   border-top: #a4c01d solid 1px;
 }
+
+@media (max-width: 767px) {
+  .pokemon-list-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .pokemon-list-container {
+    grid-template-columns: auto;
+  }
+}
