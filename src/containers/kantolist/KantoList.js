@@ -19,7 +19,7 @@ const KantoList = () => {
     dispatch(showPokemon(id));
   };
 
-  if (pokemon.pending) return <div>Loading...</div>;
+  if (pokemon.pending || filter.pending || detail.pending) return <div>Loading...</div>;
 
   if (detail.results) return <Detail detail={detail.results} />;
 

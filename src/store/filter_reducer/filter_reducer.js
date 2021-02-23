@@ -1,6 +1,6 @@
 import {
   FETCH_TYPES_ERROR, FETCH_TYPES_PENDING, FETCH_TYPES_SUCCESS, RESET_TYPES,
-} from '../actions/index';
+} from '../../actions/index';
 
 const detailInitial = {
   pending: false,

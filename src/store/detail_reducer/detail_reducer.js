@@ -1,6 +1,6 @@
 import {
   FETCH_DETAIL_ERROR, FETCH_DETAIL_PENDING, FETCH_DETAIL_SUCCESS, RESET_DETAIL,
-} from '../actions/index';
+} from '../../actions/index';
 
 const detailInitial = {
   pending: false,

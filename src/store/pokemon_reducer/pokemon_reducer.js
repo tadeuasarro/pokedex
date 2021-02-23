@@ -1,4 +1,4 @@
-import { FETCH_POKEMON_PENDING, FETCH_POKEMON_SUCCESS, FETCH_POKEMON_ERROR } from '../actions/index';
+import { FETCH_POKEMON_PENDING, FETCH_POKEMON_SUCCESS, FETCH_POKEMON_ERROR } from '../../actions/index';
 
 const pokemonInitial = {
   pending: false,
