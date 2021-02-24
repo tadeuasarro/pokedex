@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Display renders correctly 1`] = `
-<button
+<a
   className="pokemon-container"
-  type="button"
+  href="/detail/?id=2"
+  onClick={[Function]}
 >
   <span>
     #
@@ -12,5 +13,5 @@ exports[`Display renders correctly 1`] = `
   <span>
     Ivysaur
   </span>
-</button>
+</a>
 `;

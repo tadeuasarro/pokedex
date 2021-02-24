@@ -38,6 +38,9 @@
   border-radius: 5px;
   outline: none;
   width: 100px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 .reset-button {

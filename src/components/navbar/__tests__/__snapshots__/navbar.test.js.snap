@@ -7,7 +7,7 @@ exports[`Display renders correctly 1`] = `
   <img
     alt="Pokémon"
     className="pokemon-logo"
-    src="./logo.png"
+    src="../logo.png"
   />
 </div>
 `;
