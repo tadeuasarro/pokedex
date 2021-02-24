@@ -1,14 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import Detail from '../detail/Detail';
 import Listing from '../../components/listing/Listing';
 import Loading from '../../components/loading/Loading';
 import indexPokemon from '../../api/index-pokemon';
-import showPokemon from '../../api/show-pokemon';
 import './kanto-list.css';
 
 const KantoList = () => {
-  const { pokemon, detail, filter } = useSelector(state => state);
+  const { pokemon, filter } = useSelector(state => state);
 
   const dispatch = useDispatch();
 
@@ -16,17 +14,11 @@ const KantoList = () => {
     useEffect(() => dispatch(indexPokemon()), []);
   }
 
-  const handleClick = id => {
-    dispatch(showPokemon(id));
-  };
+  if (pokemon.pending || filter.pending) return <Loading />;
 
-  if (pokemon.pending || filter.pending || detail.pending) return <Loading />;
+  if (filter.results) return <Listing pokemonList={filter.results} filter />;
 
-  if (detail.results) return <Detail detail={detail.results} />;
-
-  if (filter.results) return <Listing pokemonList={filter.results} onClick={handleClick} filter />;
-
-  return <Listing pokemonList={pokemon.results} onClick={handleClick} />;
+  return <Listing pokemonList={pokemon.results} />;
 };
 
 export default KantoList;

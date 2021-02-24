@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import Pokemon from '../pokemon/Pokemon';
 
-const Listing = ({ pokemonList, onClick, filter }) => {
+const Listing = ({ pokemonList, filter }) => {
   if (filter) {
     return (
       <div className="pokemon-list-outer-container">
         <div className="pokemon-list-container">
           {
             pokemonList.map(pokemon => (
-              <Pokemon className="pokemon-container" onClick={onClick} key={pokemon.pokemon.name} pokemon={pokemon.pokemon} />
+              <Pokemon className="pokemon-container" key={pokemon.pokemon.name} pokemon={pokemon.pokemon} />
             ))
           }
         </div>
@@ -21,7 +21,7 @@ const Listing = ({ pokemonList, onClick, filter }) => {
       <div className="pokemon-list-container">
         {
           pokemonList.map(pokemon => (
-            <Pokemon className="pokemon-container" onClick={onClick} key={pokemon.name} pokemon={pokemon} />
+            <Pokemon className="pokemon-container" key={pokemon.name} pokemon={pokemon} />
           ))
         }
       </div>
@@ -31,7 +31,6 @@ const Listing = ({ pokemonList, onClick, filter }) => {
 
 Listing.propTypes = {
   pokemonList: PropTypes.instanceOf(Array).isRequired,
-  onClick: PropTypes.func.isRequired,
   filter: PropTypes.bool,
 };
 
