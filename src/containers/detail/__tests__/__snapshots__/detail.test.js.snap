@@ -9,21 +9,18 @@ exports[`Display renders correctly 1`] = `
   >
     <button
       className="reset-button"
-      onClick={[Function]}
       type="button"
     >
       Home
     </button>
     <button
       className="next-button"
-      onClick={[Function]}
       type="button"
     >
       Next
     </button>
     <button
       className="previous-button"
-      onClick={[Function]}
       type="button"
     >
       Previous
@@ -34,29 +31,22 @@ exports[`Display renders correctly 1`] = `
       <p
         className="detail-info"
       >
-        #
-        001
-         
-        STRING
+        # 001  
+        NAME
       </p>
       <p
         className="detail-info"
-      >
-        <span>
-          GRASS
-           
-        </span>
-      </p>
+      />
       <p
         className="detail-info"
       >
         Height  
-        1
+        10
           m
       </p>
       <p>
         Weight  
-        10
+        100
           kg
       </p>
     </div>
@@ -65,7 +55,7 @@ exports[`Display renders correctly 1`] = `
         className="pokemon-sprite"
         style={
           Object {
-            "backgroundImage": "url(https://somestring.com)",
+            "backgroundImage": "url(sprite)",
           }
         }
       >

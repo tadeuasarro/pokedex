@@ -1,5 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import Filtered from '../filtered/Filtered';
+import Navbar from '../../components/navbar/Navbar';
 import Listing from '../../components/listing/Listing';
 import Loading from '../../components/loading/Loading';
 import indexPokemon from '../../api/index-pokemon';
@@ -16,9 +18,23 @@ const KantoList = () => {
 
   if (pokemon.pending || filter.pending) return <Loading />;
 
-  if (filter.results) return <Listing pokemonList={filter.results} filter />;
+  if (filter.results) {
+    return (
+      <div>
+        <Navbar />
+        <Filtered />
+        <Listing pokemonList={filter.results} filter />
+      </div>
+    );
+  }
 
-  return <Listing pokemonList={pokemon.results} />;
+  return (
+    <div>
+      <Navbar />
+      <Filtered />
+      <Listing pokemonList={pokemon.results} />
+    </div>
+  );
 };
 
 export default KantoList;

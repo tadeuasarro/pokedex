@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './pokemon.css';
 
 const capitalize = myStr => (myStr.charAt(0).toUpperCase() + myStr.slice(1));
@@ -17,13 +18,13 @@ const Pokemon = ({ pokemon }) => {
   }
 
   return (
-    <button type="button" className="pokemon-container">
+    <Link to={`/detail/?id=${id}`} className="pokemon-container">
       <span>
         #
         {idStr}
       </span>
       <span>{capitalize(name)}</span>
-    </button>
+    </Link>
   );
 };
 

@@ -3,7 +3,6 @@
 exports[`Display renders correctly 1`] = `
 <button
   className="pokemon-container"
-  onClick={[Function]}
   type="button"
 >
   <span>

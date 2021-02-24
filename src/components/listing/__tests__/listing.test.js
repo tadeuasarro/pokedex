@@ -13,7 +13,7 @@ describe('Rendering component', () => {
     act(() => {
       render(
         <Provider store={store}>
-          <Listing pokemonList={pokemon} onClick={handleClick} />
+          <Listing pokemonList={pokemon} />
         </Provider>,
       );
     });
@@ -26,7 +26,7 @@ describe('Display', () => {
   it('renders correctly', () => {
     const comp = renderer.create(
       <Provider store={store}>
-        <Listing pokemonList={pokemon} onClick={handleClick} />
+        <Listing pokemonList={pokemon} />
       </Provider>,
     ).toJSON();
     expect(comp).toMatchSnapshot();
