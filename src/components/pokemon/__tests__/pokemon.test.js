@@ -15,7 +15,7 @@ describe('Rendering component', () => {
           <Provider store={store}>
             <Pokemon pokemon={pokemon} />
           </Provider>
-        </BrowserRouter>
+        </BrowserRouter>,
       );
     });
     // eslint-disable-next-line
@@ -30,7 +30,7 @@ describe('Display', () => {
         <Provider store={store}>
           <Pokemon pokemon={pokemon} />
         </Provider>
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(comp).toMatchSnapshot();
   });

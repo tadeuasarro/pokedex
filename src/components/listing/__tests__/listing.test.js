@@ -5,8 +5,6 @@ import { Provider } from 'react-redux';
 import store from '../../../store/store';
 import Listing from '../Listing';
 
-const handleClick = () => true;
-
 const pokemon = [{ name: 'Ivysaur', url: 'https://pokeapi.co/api/v2/pokemon/2/' }];
 
 describe('Rendering component', () => {
@@ -17,7 +15,7 @@ describe('Rendering component', () => {
           <Provider store={store}>
             <Listing pokemonList={pokemon} />
           </Provider>
-        </BrowserRouter>
+        </BrowserRouter>,
       );
     });
     // eslint-disable-next-line
@@ -32,7 +30,7 @@ describe('Display', () => {
         <Provider store={store}>
           <Listing pokemonList={pokemon} />
         </Provider>
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(comp).toMatchSnapshot();
   });
