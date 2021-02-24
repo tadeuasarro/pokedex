@@ -7,10 +7,10 @@ exports[`Display renders correctly 1`] = `
   <div
     className="pokemon-list-container"
   >
-    <button
+    <a
       className="pokemon-container"
+      href="/detail/?id=2"
       onClick={[Function]}
-      type="button"
     >
       <span>
         #
@@ -19,7 +19,7 @@ exports[`Display renders correctly 1`] = `
       <span>
         Ivysaur
       </span>
-    </button>
+    </a>
   </div>
 </div>
 `;

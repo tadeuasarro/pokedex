@@ -2,76 +2,12 @@
 
 exports[`Display renders correctly 1`] = `
 <div
-  className="pokemon-detail-outer-container"
+  className="loading-container"
 >
-  <div
-    className="pokemon-detail-container"
+  <h1
+    className="loading-message"
   >
-    <button
-      className="reset-button"
-      onClick={[Function]}
-      type="button"
-    >
-      Home
-    </button>
-    <button
-      className="next-button"
-      onClick={[Function]}
-      type="button"
-    >
-      Next
-    </button>
-    <button
-      className="previous-button"
-      onClick={[Function]}
-      type="button"
-    >
-      Previous
-    </button>
-    <div
-      className="pokemon-detail-info"
-    >
-      <p
-        className="detail-info"
-      >
-        #
-        001
-         
-        STRING
-      </p>
-      <p
-        className="detail-info"
-      >
-        <span>
-          GRASS
-           
-        </span>
-      </p>
-      <p
-        className="detail-info"
-      >
-        Height  
-        1
-          m
-      </p>
-      <p>
-        Weight  
-        10
-          kg
-      </p>
-    </div>
-    <div>
-      <div
-        className="pokemon-sprite"
-        style={
-          Object {
-            "backgroundImage": "url(https://somestring.com)",
-          }
-        }
-      >
-         
-      </div>
-    </div>
-  </div>
+    Loading...
+  </h1>
 </div>
 `;

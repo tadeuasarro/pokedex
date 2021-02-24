@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './pokemon.css';
 
 const capitalize = myStr => (myStr.charAt(0).toUpperCase() + myStr.slice(1));
 
-const Pokemon = ({ pokemon, onClick }) => {
+const Pokemon = ({ pokemon }) => {
   const { name, url } = (pokemon);
   const id = (url.slice(34)).replace('/', '');
   let idStr = '';
@@ -17,13 +18,13 @@ const Pokemon = ({ pokemon, onClick }) => {
   }
 
   return (
-    <button type="button" onClick={() => onClick(id)} className="pokemon-container">
+    <Link to={`/detail/?id=${id}`} className="pokemon-container">
       <span>
         #
         {idStr}
       </span>
       <span>{capitalize(name)}</span>
-    </button>
+    </Link>
   );
 };
 
@@ -32,7 +33,6 @@ Pokemon.propTypes = {
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
   }).isRequired,
-  onClick: PropTypes.func.isRequired,
 };
 
 export default Pokemon;

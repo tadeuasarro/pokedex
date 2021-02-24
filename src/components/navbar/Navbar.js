@@ -2,7 +2,7 @@ import './navbar.css';
 
 const Navbar = () => (
   <div id="navbar">
-    <img className="pokemon-logo" src="./logo.png" alt="Pokémon" />
+    <img className="pokemon-logo" src="../logo.png" alt="Pokémon" />
   </div>
 );
 
