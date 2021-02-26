@@ -1,0 +1,33 @@
+.filter-container {
+  padding: 20px 10% 0 10%;
+}
+
+.filter-container form {
+  width: 100%;
+  display: flex;
+}
+
+#types-listing {
+  display: block;
+  width: 75%;
+  border-radius: 5px 0 0 5px;
+}
+
+.filter-button {
+  width: 25%;
+  border: none;
+  background-color: #2e69b3;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 0 5px 5px 0;
+}
+
+#types-listing,
+.filter-button {
+  padding: 10px;
+  outline: none;
+}
+
+.filter-button:hover {
+  cursor: pointer;
+}

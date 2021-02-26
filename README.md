@@ -1,68 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# React & Redux Capstone
 
-## Available Scripts
+#### Hello there! Welcome to my Kanto National Pokédex. For this project, I have created a React & Redux app that consumes data from [this awesome API](https://pokeapi.co/), in order to recreate the Kanto region Pokédex from the Pokémon series. The user can check information about all 151 Pokémon from the first season of the anime!
 
-In the project directory, you can run:
+#### Features
+- Index the original 151 Pokémon
+- Filter the Pokémon by their types
+- Check detailed information about each Pokémon
 
-### `npm start`
+#### Screenshot
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![screenshot](public/screenshot.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Livedemo
 
-### `npm test`
+- [Heroku](https://calm-ravine-21015.herokuapp.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `npm run build`
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Packages
+- [Babel](https://babeljs.io/)
+- [Enzyme](https://www.npmjs.com/package/enzyme)
+- [Eslint](https://eslint.org/)
+- [PropTypes](https://www.npmjs.com/package/prop-types)
+- [React-dom](https://www.npmjs.com/package/react-dom)
+- [React-test-renderer](https://www.npmjs.com/package/react-test-renderer)
+- [Redux-thunk](https://www.npmjs.com/package/redux-thunk)
+- [Stylelint](https://stylelint.io/)
+- [Webpack](https://webpack.js.org/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
 
-### `npm run eject`
+Clone the repo with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+  https://github.com/tadeuasarro/pokedex.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install packages with
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+  npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Start server with:
 
-## Learn More
+```
+  npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open `http://localhost:3000/` in your favorite browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run tests
 
-### Code Splitting
+```
+  npm test
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Authors
 
-### Analyzing the Bundle Size
+👤 This is me:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [Tadeu A Sarro](https://tadeuasarro.me)
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Contributing
 
-### Advanced Configuration
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Feel free to check the [issues page](https://github.com/tadeuasarro/pokedex/issues)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Show your support
 
-### `npm run build` fails to minify
+Give a star if you like this project!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Acknowledgments
+
+- [PokéAPI](https://pokeapi.co/)
+- [Microverse](https://www.microverse.org/)
+
+### 📝 License
+
+This project is MIT licensed.

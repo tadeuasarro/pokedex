@@ -1,0 +1,14 @@
+#navbar {
+  background-color: red;
+  padding: 10px;
+}
+
+.pokemon-logo {
+  width: 200px;
+}
+
+@media (max-width: 576px) {
+  .pokemon-logo {
+    width: 110px;
+  }
+}

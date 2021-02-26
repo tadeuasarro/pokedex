@@ -1,0 +1,9 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10%;
+}
+
+.loading-message {
+  display: inline;
+}
